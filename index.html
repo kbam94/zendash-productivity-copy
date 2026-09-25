@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ZenDash</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="greeting">
+                <h1 id="greeting-text">Hello, User</h1>
+                <p id="current-date">Loading date...</p>
+            </div>
+            <div class="progress-circle-container">
+                <svg class="progress-ring" width="60" height="60">
+                    <circle class="progress-ring-bg" stroke="#2d2d2d" stroke-width="4" fill="transparent" r="26" cx="30" cy="30"/>
+                    <circle id="progress-bar" class="progress-ring-bar" stroke="#bb86fc" stroke-width="4" stroke-linecap="round" fill="transparent" r="26" cx="30" cy="30"/>
+                </svg>
+                <span id="progress-percent">0%</span>
+            </div>
+        </header>
+
+        <main>
+            <section class="card">
+                <h2>Daily Tasks</h2>
+                <div class="input-group">
+                    <input type="text" id="task-input" placeholder="Add a task...">
+                    <button id="add-task-btn">+</button>
+                </div>
+                <ul id="task-list" class="list"></ul>
+            </section>
+
+            <section class="card">
+                <h2>Habits</h2>
+                <div class="input-group">
+                    <input type="text" id="habit-input" placeholder="New habit...">
+                    <button id="add-habit-btn">+</button>
+                </div>
+                <div id="habit-grid" class="habit-grid"></div>
+            </section>
+
+            <section class="card">
+                <h2>Quick Notes</h2>
+                <textarea id="notes-area" placeholder="Jot something down..."></textarea>
+            </section>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

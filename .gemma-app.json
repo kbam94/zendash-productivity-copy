@@ -1,0 +1,7 @@
+{
+  "name": "ZenDash Productivity",
+  "description": "A polished, dark-mode mobile productivity dashboard with tasks, habits, and notes.",
+  "model": "google/gemma-4-31b-it",
+  "prompt": "Build me a polished mobile-first personal productivity dashboard. Include a greeting, today's date, a daily task list, a habit progress section, a quick notes section, and a simple daily progress percentage. Users should be able to add and complete tasks, add habits, mark habits complete, and save quick notes. Persist all user data in localStorage. Everything must work without a backend. Use a dark modern dashboard design optimized for phone screens. Use only HTML, CSS, and plain JavaScript.",
+  "generatedAt": "2026-09-25T08:13:08.916Z"
+}
